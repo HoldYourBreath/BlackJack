@@ -1,0 +1,101 @@
+# depslib dependency file v1.0
+1459272602 source:c:\blackjack\main.cpp
+	<random>
+	<iostream>
+	<vector>
+	"CardDeck.h"
+	"Card.h"
+	"UserInterface.h"
+
+1459289828 c:\blackjack\include\carddeck.h
+	"Card.h"
+	<string>
+	<sstream>
+	<vector>
+	<random>
+	<ctime>
+	<iostream>
+
+1459290306 c:\blackjack\include\card.h
+	<string>
+
+1459290606 c:\blackjack\include\player.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
+1459290320 source:c:\blackjack\src\card.cpp
+	"Card.h"
+
+1459293032 source:c:\blackjack\src\carddeck.cpp
+	"CardDeck.h"
+
+1459290782 c:\blackjack\include\userinterface.h
+	<vector>
+	<string>
+	<iostream>
+
+1459290632 source:c:\blackjack\src\player.cpp
+	"Player.h"
+
+1459292810 source:c:\blackjack\src\userinterface.cpp
+	"UserInterface.h"
+	"CardDeck.h"
+
+1459372204 source:c:\blackjack\blackjack-master\c++\blackjack\main.cpp
+	<random>
+	<iostream>
+	<vector>
+	"CardDeck.h"
+	"Card.h"
+	"UserInterface.h"
+
+1459372205 c:\blackjack\blackjack-master\c++\blackjack\include\carddeck.h
+	"Card.h"
+	<string>
+	<sstream>
+	<vector>
+	<random>
+	<ctime>
+	<iostream>
+
+1459372205 c:\blackjack\blackjack-master\c++\blackjack\include\card.h
+	<string>
+
+1459375982 c:\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
+	<vector>
+	<string>
+	<iostream>
+	"Game.h"
+	"Player.h"
+
+1459372205 source:c:\blackjack\blackjack-master\c++\blackjack\src\card.cpp
+	"Card.h"
+
+1459372205 source:c:\blackjack\blackjack-master\c++\blackjack\src\carddeck.cpp
+	"CardDeck.h"
+
+1459373950 source:c:\blackjack\blackjack-master\c++\blackjack\src\player.cpp
+	"Player.h"
+
+1459373909 c:\blackjack\blackjack-master\c++\blackjack\include\player.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
+1459375020 source:c:\blackjack\blackjack-master\c++\blackjack\src\userinterface.cpp
+	"UserInterface.h"
+	"CardDeck.h"
+	"Game.h"
+
+1459374030 source:c:\blackjack\blackjack-master\c++\blackjack\src\game.cpp
+	"Game.h"
+
+1459375179 c:\blackjack\blackjack-master\c++\blackjack\include\game.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
