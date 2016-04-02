@@ -9,8 +9,16 @@
 int main()
 {
    //Start game
-    UserInterface start;
-    start.StartUserInterface();
+   UserInterface start;
+   //start.UserInterfaceLoop();
+   start.StartUserInterface();
+//GameLoop();
+
+{
+
+}
+
+
 }
 
 

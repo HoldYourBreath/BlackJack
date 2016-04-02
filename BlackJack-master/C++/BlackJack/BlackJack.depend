@@ -43,7 +43,7 @@
 	"UserInterface.h"
 	"CardDeck.h"
 
-1459372204 source:c:\blackjack\blackjack-master\c++\blackjack\main.cpp
+1459615775 source:c:\blackjack\blackjack-master\c++\blackjack\main.cpp
 	<random>
 	<iostream>
 	<vector>
@@ -51,7 +51,7 @@
 	"Card.h"
 	"UserInterface.h"
 
-1459372205 c:\blackjack\blackjack-master\c++\blackjack\include\carddeck.h
+1459540811 c:\blackjack\blackjack-master\c++\blackjack\include\carddeck.h
 	"Card.h"
 	<string>
 	<sstream>
@@ -63,37 +63,39 @@
 1459372205 c:\blackjack\blackjack-master\c++\blackjack\include\card.h
 	<string>
 
-1459375982 c:\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
+1459614681 c:\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
 	<vector>
 	<string>
 	<iostream>
 	"Game.h"
 	"Player.h"
+	"Card.h"
 
 1459372205 source:c:\blackjack\blackjack-master\c++\blackjack\src\card.cpp
 	"Card.h"
 
-1459372205 source:c:\blackjack\blackjack-master\c++\blackjack\src\carddeck.cpp
+1459585011 source:c:\blackjack\blackjack-master\c++\blackjack\src\carddeck.cpp
 	"CardDeck.h"
 
-1459373950 source:c:\blackjack\blackjack-master\c++\blackjack\src\player.cpp
+1459544448 source:c:\blackjack\blackjack-master\c++\blackjack\src\player.cpp
 	"Player.h"
 
-1459373909 c:\blackjack\blackjack-master\c++\blackjack\include\player.h
+1459544448 c:\blackjack\blackjack-master\c++\blackjack\include\player.h
 	<string>
 	<vector>
 	"Card.h"
 	"CardDeck.h"
 
-1459375020 source:c:\blackjack\blackjack-master\c++\blackjack\src\userinterface.cpp
+1459587118 source:c:\blackjack\blackjack-master\c++\blackjack\src\userinterface.cpp
 	"UserInterface.h"
 	"CardDeck.h"
 	"Game.h"
+	"Player.h"
 
-1459374030 source:c:\blackjack\blackjack-master\c++\blackjack\src\game.cpp
+1459613995 source:c:\blackjack\blackjack-master\c++\blackjack\src\game.cpp
 	"Game.h"
 
-1459375179 c:\blackjack\blackjack-master\c++\blackjack\include\game.h
+1459614758 c:\blackjack\blackjack-master\c++\blackjack\include\game.h
 	<string>
 	<vector>
 	"Card.h"

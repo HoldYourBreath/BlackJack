@@ -35,11 +35,13 @@
 		</Compiler>
 		<Unit filename="include/Card.h" />
 		<Unit filename="include/CardDeck.h" />
+		<Unit filename="include/Game.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/UserInterface.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Card.cpp" />
 		<Unit filename="src/CardDeck.cpp" />
+		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/UserInterface.cpp" />
 		<Extensions>

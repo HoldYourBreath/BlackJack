@@ -12,8 +12,6 @@ class Player
         virtual ~Player();
     protected:
     private:
-        Player* p_player1;
-        Player* p_dealer;
         std::string player_name;
        // CardDeck card_deck;
 };

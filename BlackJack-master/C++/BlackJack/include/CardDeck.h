@@ -12,7 +12,10 @@ class CardDeck
 {
     public:
         CardDeck();
+        void AddCard(Card* p_card);
+        Card* GetCardOnTop();
         void Shuffle();
+        bool IsEmpty();
         virtual ~CardDeck();
     protected:
     private:
