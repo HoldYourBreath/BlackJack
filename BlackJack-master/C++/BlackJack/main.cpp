@@ -10,15 +10,6 @@ int main()
 {
    //Start game
    UserInterface start;
-   //start.UserInterfaceLoop();
    start.StartUserInterface();
-//GameLoop();
-
-{
-
 }
-
-
-}
-
 

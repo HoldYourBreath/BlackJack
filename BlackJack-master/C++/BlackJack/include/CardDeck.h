@@ -12,10 +12,13 @@ class CardDeck
 {
     public:
         CardDeck();
+        //CardDeck(std::string* p_card_suite, int* p_card_value);
         void AddCard(Card* p_card);
         Card* GetCardOnTop();
         void Shuffle();
         bool IsEmpty();
+        struct card;
+        int GetNrOfCardsInDeck();
         virtual ~CardDeck();
     protected:
     private:

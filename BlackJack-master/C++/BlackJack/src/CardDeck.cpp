@@ -2,8 +2,44 @@
 
 CardDeck::CardDeck()
 {
+    /*
+    struct card
+    {
+        std::string suite;
+        int value;
+    };
+    */
+
     for (int i = 0; i != 4; ++i) //Create 4 decks
     {
+    //ctor
+    //card kortti;
+    //kortti.suite = "Hearts";
+    /*
+    for (int i =0; i < 4; ++i)
+    {
+    for (int j=1; j<=13; ++j)
+    {
+    switch(i) {
+      case 0:
+        kortti.suite = "Hearts";
+        kortti.value = j;
+        break;
+      case 1:
+        kortti.suite = "Diamonds";
+        kortti.value = j;
+        break;
+      case 2:
+        kortti.suite = "Spades";
+        kortti.value = j;
+        break;
+      case 3:
+        kortti.suite = "Clubs";
+        kortti.value = j;
+        break;
+        */
+
+
     //Hearts
     p_card_two_of_hearts = new Card();
     p_card_two_of_hearts->SetCardSuit("Hearts");
@@ -219,13 +255,18 @@ CardDeck::CardDeck()
     p_card_ace_of_diamonds->SetCardSuit("Diamonds");
     p_card_ace_of_diamonds->SetCardValue(14);
     AddCard(p_card_ace_of_diamonds);
+
     }
 }
+/*    }
+    }
+}*/
 
 CardDeck::~CardDeck()
 {
 
 }
+
 
 void CardDeck::AddCard(Card* p_new_card)
 {
@@ -252,6 +293,11 @@ bool CardDeck::IsEmpty()
     is_empty = true;
   }
   return is_empty;
+}
+
+int CardDeck::GetNrOfCardsInDeck()
+{
+ return cards.size();
 }
 
 void CardDeck::Shuffle()
@@ -324,7 +370,6 @@ std::vector<Card*> cards;
         Card* p_card_queen_of_clubs;
         Card* p_card_king_of_clubs;
         Card* p_card_ace_of_clubs;
-
 
         Card* p_card_two_of_diamonds;
         Card* p_card_three_of_diamonds;

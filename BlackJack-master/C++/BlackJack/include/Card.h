@@ -7,6 +7,7 @@ class Card
 {
     public:
         Card();
+        Card(std::string* cardsuite, int* cardvalue);
         virtual ~Card();
         void SetCardSuit(std::string type1);
         void SetCardValue(int value1);

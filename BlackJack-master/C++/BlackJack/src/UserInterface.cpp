@@ -55,11 +55,11 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
         //Create new player and deck
         p_newplayers = new Player();
         p_newgame = new Game();
-        CardDeck gettopcard;
+        CardDeck my_card_deck;
         //for (std::vector<Card*> i = gettopcard.begin(); i != gettopcard.end() ; ++i)
         for (int i = 0; i != 208 ; ++i)
         {
-        topcard = gettopcard.GetCardOnTop();
+        topcard = my_card_deck.GetCardOnTop();
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }
         std::cout << "|==============================================|\n";
