@@ -5,19 +5,16 @@
 #include <sstream>
 #include <vector>
 #include <random>
-#include <ctime>
 #include <iostream>
 
 class CardDeck
 {
     public:
         CardDeck();
-        //CardDeck(std::string* p_card_suite, int* p_card_value);
         void AddCard(Card* p_card);
         Card* GetCardOnTop();
         void Shuffle();
         bool IsEmpty();
-        struct card;
         int GetNrOfCardsInDeck();
         virtual ~CardDeck();
     protected:
@@ -79,7 +76,6 @@ class CardDeck
         Card* p_card_queen_of_diamonds;
         Card* p_card_king_of_diamonds;
         Card* p_card_ace_of_diamonds;
-
 };
 
 #endif // CARDDECK_H

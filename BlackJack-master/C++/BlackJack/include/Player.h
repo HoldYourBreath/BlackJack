@@ -13,7 +13,6 @@ class Player
     protected:
     private:
         std::string player_name;
-       // CardDeck card_deck;
 };
 
 #endif // PLAYER_H

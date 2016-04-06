@@ -4,7 +4,6 @@
 #include <vector>
 #include "Card.h"
 #include "CardDeck.h"
-//#include "UserInterface.h"
 
 class Game
 {
@@ -18,7 +17,6 @@ class Game
         CardDeck* p_card_deck;
         std::string player_name;
         void GameLoop();
-       // CardDeck card_deck;
 };
 
 #endif // GAME_H

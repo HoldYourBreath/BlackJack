@@ -101,3 +101,60 @@
 	"Card.h"
 	"CardDeck.h"
 
+1459924241 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\main.cpp
+	<random>
+	<iostream>
+	<vector>
+	"CardDeck.h"
+	"Card.h"
+	"UserInterface.h"
+
+1459950793 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\carddeck.h
+	"Card.h"
+	<string>
+	<sstream>
+	<vector>
+	<random>
+	<iostream>
+
+1459750792 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\card.h
+	<string>
+
+1459750792 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\userinterface.h
+	<vector>
+	<string>
+	<iostream>
+	"Game.h"
+	"Player.h"
+	"Card.h"
+
+1459950820 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\game.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
+1459950846 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\player.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
+1459950545 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\card.cpp
+	"Card.h"
+
+1459950627 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\carddeck.cpp
+	"CardDeck.h"
+
+1459750792 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\game.cpp
+	"Game.h"
+
+1459750792 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\player.cpp
+	"Player.h"
+
+1459950699 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\userinterface.cpp
+	"UserInterface.h"
+	"CardDeck.h"
+	"Game.h"
+	"Player.h"
+

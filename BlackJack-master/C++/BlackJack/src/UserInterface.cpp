@@ -52,12 +52,12 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
     {
     case 'N' :
       {
-        //Create new player and deck
+        //Create new player and deck(s)
         p_newplayers = new Player();
         p_newgame = new Game();
         CardDeck my_card_deck;
-        //for (std::vector<Card*> i = gettopcard.begin(); i != gettopcard.end() ; ++i)
-        for (int i = 0; i != 208 ; ++i)
+        int maxnrofcardsindeck = my_card_deck.GetNrOfCardsInDeck();
+        for (int i = 0; i != maxnrofcardsindeck; ++i)
         {
         topcard = my_card_deck.GetCardOnTop();
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
@@ -69,7 +69,8 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
       {
         CardDeck shuffledeck;
         shuffledeck.Shuffle();
-        for (int i = 0; i != 208 ; ++i)
+        int maxnrofcardsindeck = shuffledeck.GetNrOfCardsInDeck();
+        for (int i = 0; i != maxnrofcardsindeck; ++i)
         {
         topcard = shuffledeck.GetCardOnTop();
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
@@ -81,6 +82,8 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
       {
         gameover = true;
         std::cout << "Bye bye" << std::endl;
+        std::cout << "Press ENTER to continue...";
+        std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
         break;
       }
     }
