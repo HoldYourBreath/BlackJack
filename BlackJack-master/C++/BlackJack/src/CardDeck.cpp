@@ -2,7 +2,7 @@
 
 CardDeck::CardDeck()
 {
-    for (int i = 0; i != 4; ++i) //Create 4 decks
+    for (int i = 0; i != 4; ++i) //Create 4 decks (shoe)
     {
     //ctor
     //card kortti;
@@ -260,15 +260,15 @@ CardDeck::~CardDeck()
 
 void CardDeck::AddCard(Card* p_new_card)
 {
-  cards.push_back(p_new_card);
+  shoe.push_back(p_new_card);
 }
 
 Card* CardDeck::GetCardOnTop()
 {
    if (!IsEmpty())
   {
-    Card* p_first_card = cards.front();
-    cards.erase(cards.begin());
+    Card* p_first_card = shoe.front();
+    shoe.erase(shoe.begin());
     return p_first_card;
   }
   return nullptr;
@@ -278,7 +278,7 @@ bool CardDeck::IsEmpty()
 {
   bool is_empty = false;
 
-  if (cards.size() < 1)
+  if (shoe.size() < 1)
   {
     is_empty = true;
   }
@@ -287,17 +287,17 @@ bool CardDeck::IsEmpty()
 
 int CardDeck::GetNrOfCardsInDeck()
 {
- return cards.size();
+ return shoe.size();
 }
 
 void CardDeck::Shuffle()
 {
   std::vector<Card*> shuffled_deck;
   std::vector<Card*> temp_deck;
-  temp_deck = cards;
+  temp_deck = shoe;
   int card_pos = -1;
 
-  for(unsigned int i = 0; i < cards.size(); ++i)
+  for(unsigned int i = 0; i < shoe.size(); ++i)
   {
     //if there is more than one card to select from
     if (temp_deck.size() > 1)
@@ -311,6 +311,6 @@ void CardDeck::Shuffle()
       shuffled_deck.push_back(temp_deck.front());
     }
   }
-  cards = shuffled_deck;
+  shoe = shuffled_deck;
 }
 

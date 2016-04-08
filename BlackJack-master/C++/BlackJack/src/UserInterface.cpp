@@ -26,6 +26,7 @@ void UserInterface::StartUserInterface()
     std::cout << "Make your choice:\n";
     std::cout << " N-New\n";
     std::cout << " S-Shuffle Deck\n";
+    std::cout << " D-Draw a card from Deck\n";
     std::cout << " Q-Quit\n";
     while (getline(std::cin, input) && input.empty())
     {
@@ -76,6 +77,14 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }
         std::cout << "|==============================================|\n";
+        break;
+      }
+    case 'D' :
+      {
+        Player draw;
+        draw.DrawCard();
+        std::vector<Card*> = draw.ShowHand();
+        std::cout <<  << std::endl;
         break;
       }
     case 'Q' :

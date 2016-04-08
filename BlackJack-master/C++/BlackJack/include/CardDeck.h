@@ -19,7 +19,7 @@ class CardDeck
         virtual ~CardDeck();
     protected:
     private:
-        std::vector<Card*> cards;
+        std::vector<Card*> shoe;
 
         Card* p_card_two_of_hearts;
         Card* p_card_three_of_hearts;
