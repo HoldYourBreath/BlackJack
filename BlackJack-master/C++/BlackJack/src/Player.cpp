@@ -21,12 +21,18 @@ void Player::DrawCard()
   p_temp_card = p_card_deck->GetCardOnTop();
   if(p_temp_card)
   {
-  cards_in_hand.push_back(p_temp_card);
+  p_cards_in_hand.push_back(p_temp_card);
   }
 }
 
 std::vector<Card*> Player::ShowHand()
 {
-  return cards_in_hand;
+  return p_cards_in_hand;
+}
+
+void Player::SetUpTurn()
+{
+
+  DrawCard();
 }
 

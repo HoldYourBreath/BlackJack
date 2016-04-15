@@ -24,9 +24,8 @@ void UserInterface::StartUserInterface()
     std::vector<char> response;
     std::string input;
     std::cout << "Make your choice:\n";
-    std::cout << " N-New\n";
+    std::cout << " N-New Game\n";
     std::cout << " S-Shuffle Deck\n";
-    std::cout << " D-Draw a card from Deck\n";
     std::cout << " Q-Quit\n";
     while (getline(std::cin, input) && input.empty())
     {
@@ -56,14 +55,17 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
         //Create new player and deck(s)
         p_newplayers = new Player();
         p_newgame = new Game();
-        CardDeck my_card_deck;
+        Game newgame;
+        newgame.StartGameUI();
+
+       /* CardDeck my_card_deck;
         int maxnrofcardsindeck = my_card_deck.GetNrOfCardsInDeck();
         for (int i = 0; i != maxnrofcardsindeck; ++i)
         {
         topcard = my_card_deck.GetCardOnTop();
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }
-        std::cout << "|==============================================|\n";
+        std::cout << "|==============================================|\n"; */
         break;
       }
     case 'S' :
@@ -77,14 +79,6 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
         std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }
         std::cout << "|==============================================|\n";
-        break;
-      }
-    case 'D' :
-      {
-        Player draw;
-        draw.DrawCard();
-        std::vector<Card*> = draw.ShowHand();
-        std::cout <<  << std::endl;
         break;
       }
     case 'Q' :

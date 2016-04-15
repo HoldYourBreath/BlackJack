@@ -13,6 +13,8 @@ class Game
         virtual ~Game();
         void Shuffle();
         void Run();
+        Game(Player* p_p1, Player* p_p2);
+        void StartGameUI();
     protected:
     private:
         CardDeck* p_card_deck;
@@ -21,6 +23,9 @@ class Game
         std::vector<Player*> players;
         Player* p_dealer;
         Player* p_player1;
+        void UiEvent(std::vector<char> event);
+        std::string HandToString(std::vector<Card*> hand);
+        void Clear();
 
 };
 
