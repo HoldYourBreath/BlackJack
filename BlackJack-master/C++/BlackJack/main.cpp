@@ -1,4 +1,3 @@
-//s#include <iostream>
 #include <random>
 #include <iostream>
 #include <vector>
@@ -11,5 +10,6 @@ int main()
    //Start game
    UserInterface start;
    start.StartUserInterface();
+   return 0;
 }
 

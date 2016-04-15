@@ -3,8 +3,6 @@
 Card::Card()
 {
     //ctor
-  card_suit = "diamond";
-  card_value = 2;
 }
 
 Card::~Card()

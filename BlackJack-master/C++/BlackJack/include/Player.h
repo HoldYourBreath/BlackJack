@@ -10,10 +10,16 @@ class Player
     public:
         Player();
         virtual ~Player();
+        void DrawCard();
+        void Run();
+        void Shuffle();
+        void SetUpTurn();
+        std::vector<Card*> ShowHand();
     protected:
     private:
         std::string player_name;
-       // CardDeck card_deck;
+        std::vector<Card*> p_cards_in_hand;
+        CardDeck* p_card_deck;
 };
 
 #endif // PLAYER_H

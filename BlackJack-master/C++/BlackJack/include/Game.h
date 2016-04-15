@@ -4,7 +4,7 @@
 #include <vector>
 #include "Card.h"
 #include "CardDeck.h"
-//#include "UserInterface.h"
+#include "Player.h"
 
 class Game
 {
@@ -13,12 +13,20 @@ class Game
         virtual ~Game();
         void Shuffle();
         void Run();
+        Game(Player* p_p1, Player* p_p2);
+        void StartGameUI();
     protected:
     private:
         CardDeck* p_card_deck;
         std::string player_name;
         void GameLoop();
-       // CardDeck card_deck;
+        std::vector<Player*> players;
+        Player* p_dealer;
+        Player* p_player1;
+        void UiEvent(std::vector<char> event);
+        std::string HandToString(std::vector<Card*> hand);
+        void Clear();
+
 };
 
 #endif // GAME_H
