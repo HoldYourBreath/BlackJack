@@ -30,9 +30,8 @@ std::vector<Card*> Player::ShowHand()
   return p_cards_in_hand;
 }
 
-void Player::SetUpTurn()
+int Player::GetNrOfCardsInHand()
 {
-
-  DrawCard();
+ return p_cards_in_hand.size();
 }
 

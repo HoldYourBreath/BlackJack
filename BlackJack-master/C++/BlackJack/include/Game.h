@@ -24,9 +24,9 @@ class Game
         Player* p_dealer;
         Player* p_player1;
         void UiEvent(std::vector<char> event);
-        std::string HandToString(std::vector<Card*> hand);
         void Clear();
-
+        bool surrender = false;
+        Card* topcard;
 };
 
 #endif // GAME_H

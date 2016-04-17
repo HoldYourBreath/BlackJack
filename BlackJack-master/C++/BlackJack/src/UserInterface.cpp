@@ -25,7 +25,7 @@ void UserInterface::StartUserInterface()
     std::string input;
     std::cout << "Make your choice:\n";
     std::cout << " N-New Game\n";
-    std::cout << " S-Shuffle Deck\n";
+    std::cout << " R-Rules\n";
     std::cout << " Q-Quit\n";
     while (getline(std::cin, input) && input.empty())
     {
@@ -81,6 +81,13 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
         std::cout << "|==============================================|\n";
         break;
       }
+    case 'R' :
+      {
+       Clear();
+       std::cout << "Dealer must hit 16" << std::endl;
+       std::cout << "|==============================================|\n";
+       break;
+      }
     case 'Q' :
       {
         gameover = true;
@@ -92,4 +99,11 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
     }
    }
 }
+
+void UserInterface::Clear()
+{
+  //Never use system, unsafe and resource hungry!!!!
+  std::system("CLS");
+}
+
 

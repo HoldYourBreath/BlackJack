@@ -21,6 +21,7 @@ class UserInterface
         Game* p_newgame;
         Card* topcard;
         bool gameover = false;
+        void Clear();
 
 };
 

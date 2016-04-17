@@ -168,3 +168,70 @@
 	<vector>
 	"Player.h"
 
+1460746318 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\main.cpp
+	<random>
+	<iostream>
+	<vector>
+	"CardDeck.h"
+	"Card.h"
+	"UserInterface.h"
+
+1460746318 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\carddeck.h
+	"Card.h"
+	<string>
+	<sstream>
+	<vector>
+	<random>
+	<iostream>
+
+1460746318 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\card.h
+	<string>
+
+1460751351 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
+	<vector>
+	<string>
+	<iostream>
+	"Game.h"
+	"Player.h"
+	"Card.h"
+
+1460900383 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\game.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+	"Player.h"
+
+1460899892 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\player.h
+	<string>
+	<vector>
+	"Card.h"
+	"CardDeck.h"
+
+1460746318 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\card.cpp
+	"Card.h"
+
+1460746318 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\carddeck.cpp
+	"CardDeck.h"
+
+1460901251 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\game.cpp
+	"Game.h"
+
+1460899872 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\player.cpp
+	"Player.h"
+
+1460746318 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\uiplaygame.cpp
+	"UIPlayGame.h"
+
+1460746318 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\uiplaygame.h
+	<iostream>
+	<string>
+	<vector>
+	"Player.h"
+
+1460751316 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\userinterface.cpp
+	"UserInterface.h"
+	"CardDeck.h"
+	"Game.h"
+	"Player.h"
+

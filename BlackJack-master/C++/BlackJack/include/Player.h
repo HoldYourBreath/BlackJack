@@ -13,13 +13,15 @@ class Player
         void DrawCard();
         void Run();
         void Shuffle();
-        void SetUpTurn();
         std::vector<Card*> ShowHand();
+        int GetNrOfCardsInHand();
     protected:
     private:
         std::string player_name;
         std::vector<Card*> p_cards_in_hand;
         CardDeck* p_card_deck;
+
+
 };
 
 #endif // PLAYER_H
