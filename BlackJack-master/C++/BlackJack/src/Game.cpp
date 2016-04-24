@@ -69,8 +69,11 @@ void Game::UiEvent(std::vector<char> event)
         {
           p_player1->DrawCard();
 
+
           //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
           std::cout << p_player1->ShowHand() << std::endl;
+          std::cout << "Press ENTER to continue...";
+          std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
           p_player1->DrawCard();
           //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }

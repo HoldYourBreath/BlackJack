@@ -3,8 +3,7 @@
 Player::Player()
 {
   //ctor
-  //p_card_deck = new CardDeck();
-
+  p_card_deck = new CardDeck();
   player_name = "Player 1";
 
 }
