@@ -25,13 +25,27 @@ void Player::DrawCard()
   }
 }
 
-std::vector<Card*> Player::ShowHand()
+std::string Player::ShowHand()
 {
-  return p_cards_in_hand;
+
+ // for (auto iter = p_cards_in_hand.begin(); iter != p_cards_in_hand.end(); iter++)
+  //for (int i = 0; i != p_cards_in_hand.size(); i++)
+  {
+//Card* p_first_card = p_cards_in_hand.front();
+
+  std::string tempcardsuit;
+  //int tempcardval;
+  tempcardsuit = p_cards_in_hand.at(0)->GetCardSuit();
+  //tempcardval = p_cards_in_hand.at(0)->GetCardValue();
+
+
+  return tempcardsuit;
+  }
 }
 
 int Player::GetNrOfCardsInHand()
 {
- return p_cards_in_hand.size();
+ //return p_cards_in_hand.size();
+ return 0;
 }
 

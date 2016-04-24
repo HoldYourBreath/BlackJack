@@ -4,6 +4,8 @@ Game::Game()
 {
   //ctor
   //p_card_deck = new CardDeck();
+  p_dealer = new Player();
+  p_player1 = new Player();
   players.push_back(p_dealer);
   players.push_back(p_player1);
   //players.push_back(p_player2);
@@ -66,9 +68,11 @@ void Game::UiEvent(std::vector<char> event)
         if (p_player1->GetNrOfCardsInHand() == 0)
         {
           p_player1->DrawCard();
-          std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
+
+          //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
+          std::cout << p_player1->ShowHand() << std::endl;
           p_player1->DrawCard();
-          std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
+          //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
         }
         else
         {

@@ -2,6 +2,7 @@
 
 CardDeck::CardDeck()
 {
+
     for (int i = 0; i != 4; ++i) //Create 4 decks (shoe)
     {
     //ctor
@@ -257,7 +258,6 @@ CardDeck::~CardDeck()
 
 }
 
-
 void CardDeck::AddCard(Card* p_new_card)
 {
   shoe.push_back(p_new_card);
@@ -289,6 +289,10 @@ int CardDeck::GetNrOfCardsInDeck()
 {
  return shoe.size();
 }
+
+
+
+
 
 void CardDeck::Shuffle()
 {

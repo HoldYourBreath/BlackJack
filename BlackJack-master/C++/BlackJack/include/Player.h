@@ -13,7 +13,8 @@ class Player
         void DrawCard();
         void Run();
         void Shuffle();
-        std::vector<Card*> ShowHand();
+        //std::vector<Card*> ShowHand();
+        std::string ShowHand();
         int GetNrOfCardsInHand();
     protected:
     private:
