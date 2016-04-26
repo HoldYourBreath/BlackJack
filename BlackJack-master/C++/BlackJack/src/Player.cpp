@@ -24,22 +24,24 @@ void Player::DrawCard()
   }
 }
 
-std::string Player::ShowHand()
+std::pair<std::string , int> Player::ShowHand()
 {
 
- // for (auto iter = p_cards_in_hand.begin(); iter != p_cards_in_hand.end(); iter++)
-  //for (int i = 0; i != p_cards_in_hand.size(); i++)
+  int j = p_cards_in_hand.size();
+   //std::string tempcardsuit;
+  //for (int iter = p_cards_in_hand.begin(); iter != p_cards_in_hand.end(); iter++)
+  for (unsigned i = 0; i != j; i++)
   {
 //Card* p_first_card = p_cards_in_hand.front();
 
-  std::string tempcardsuit;
+
   //int tempcardval;
-  tempcardsuit = p_cards_in_hand.at(0)->GetCardSuit();
-  //tempcardval = p_cards_in_hand.at(0)->GetCardValue();
+  show.first = p_cards_in_hand.at(i)->GetCardSuit();
+  show.second = p_cards_in_hand.at(i)->GetCardValue();
 
-
-  return tempcardsuit;
   }
+  //return tempcardsuit;
+  return std::make_pair(show.first, show.second);
 }
 
 int Player::GetNrOfCardsInHand()

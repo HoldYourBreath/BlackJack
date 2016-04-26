@@ -290,10 +290,6 @@ int CardDeck::GetNrOfCardsInDeck()
  return shoe.size();
 }
 
-
-
-
-
 void CardDeck::Shuffle()
 {
   std::vector<Card*> shuffled_deck;

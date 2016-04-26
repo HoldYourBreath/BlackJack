@@ -14,13 +14,14 @@ class Player
         void Run();
         void Shuffle();
         //std::vector<Card*> ShowHand();
-        std::string ShowHand();
+        std::pair<std::string , int> ShowHand();
         int GetNrOfCardsInHand();
     protected:
     private:
         std::string player_name;
         std::vector<Card*> p_cards_in_hand;
         CardDeck* p_card_deck;
+        std::pair< std::string, int> show;
 
 
 };
