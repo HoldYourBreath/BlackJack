@@ -62,6 +62,7 @@ void Game::UiEvent(std::vector<char> event)
         //std::cout << std::vector<Card*> cardsinhand = draw.ShowHand() << std::endl;
         //std::cout << "  Hand: " << HandToString(p_player1->ShowHand()) << std::endl;
         //DrawCard();
+        //p_card_deck = new CardDeck();
         CardDeck shuffledeck;
         shuffledeck.Shuffle();
         topcard = shuffledeck.GetCardOnTop();
@@ -71,7 +72,8 @@ void Game::UiEvent(std::vector<char> event)
           p_player1->DrawCard();
           //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
           //std::cout << p_player1->ShowHand() << std::endl;
-          std::cout << p_player1->ShowHand().second << " of " << p_player1->ShowHand().first << std::endl;
+          std::cout << p_player1->ShowHand(0).second << " of " << p_player1->ShowHand(0).first << std::endl;
+          std::cout << p_player1->ShowHand(1).second << " of " << p_player1->ShowHand(1).first << std::endl;
           std::cout << "Press ENTER to continue...";
           std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
 

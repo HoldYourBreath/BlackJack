@@ -14,7 +14,7 @@ class Player
         void Run();
         void Shuffle();
         //std::vector<Card*> ShowHand();
-        std::pair<std::string , int> ShowHand();
+        std::pair<std::string , int> ShowHand(int i);
         int GetNrOfCardsInHand();
     protected:
     private:
