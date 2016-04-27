@@ -53,7 +53,7 @@ void UserInterface::StartMenuEvent(std::vector<char> event)
     case 'N' :
       {
         //Create new player and deck(s)
-        p_newplayers = new Player();
+        //p_newplayers = new Player();
         p_newgame = new Game();
         Game newgame;
         newgame.StartGameUI();

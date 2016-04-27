@@ -187,7 +187,7 @@
 1460746318 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\card.h
 	<string>
 
-1460751351 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
+1461795145 c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\include\userinterface.h
 	<vector>
 	<string>
 	<iostream>
@@ -214,10 +214,10 @@
 1461701611 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\carddeck.cpp
 	"CardDeck.h"
 
-1461735160 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\game.cpp
+1461794613 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\game.cpp
 	"Game.h"
 
-1461734703 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\player.cpp
+1461792505 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\player.cpp
 	"Player.h"
 
 1460746318 source:c:\users\jannepc-skylake\blackjack\blackjack-master\c++\blackjack\src\uiplaygame.cpp

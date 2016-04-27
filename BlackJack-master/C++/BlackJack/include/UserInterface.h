@@ -17,7 +17,7 @@ class UserInterface
     protected:
     private:
         void StartMenuEvent(std::vector<char> event);
-        Player* p_newplayers;
+        //Player* p_newplayers;
         Game* p_newgame;
         Card* topcard;
         bool gameover = false;

@@ -58,7 +58,7 @@ std::pair<std::string , int> Player::ShowHand(int i)
 
 int Player::GetNrOfCardsInHand()
 {
- //return p_cards_in_hand.size();
- return 0;
+ return p_cards_in_hand.size();
+ //return 0;
 }
 
