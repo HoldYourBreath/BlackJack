@@ -117,10 +117,10 @@
 	<random>
 	<iostream>
 
-1459750792 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\card.h
+1461827940 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\card.h
 	<string>
 
-1460725984 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\userinterface.h
+1461825639 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\userinterface.h
 	<vector>
 	<string>
 	<iostream>
@@ -128,32 +128,34 @@
 	"Player.h"
 	"Card.h"
 
-1460726990 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\game.h
+1461845765 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\game.h
 	<string>
 	<vector>
 	"Card.h"
 	"CardDeck.h"
 	"Player.h"
+	<tuple>
 
-1460727831 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\player.h
+1461845760 c:\ejanmak\work\programming\blackjack-master\c++\blackjack\include\player.h
 	<string>
 	<vector>
 	"Card.h"
 	"CardDeck.h"
+	<tuple>
 
-1459950545 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\card.cpp
+1461827995 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\card.cpp
 	"Card.h"
 
-1460012125 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\carddeck.cpp
+1461832334 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\carddeck.cpp
 	"CardDeck.h"
 
-1460726990 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\game.cpp
+1461848156 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\game.cpp
 	"Game.h"
 
-1460355895 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\player.cpp
+1461847385 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\player.cpp
 	"Player.h"
 
-1460726791 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\userinterface.cpp
+1461825639 source:c:\ejanmak\work\programming\blackjack-master\c++\blackjack\src\userinterface.cpp
 	"UserInterface.h"
 	"CardDeck.h"
 	"Game.h"

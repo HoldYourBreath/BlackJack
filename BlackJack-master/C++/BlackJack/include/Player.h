@@ -4,6 +4,9 @@
 #include <vector>
 #include "Card.h"
 #include "CardDeck.h"
+#include <tuple>
+//#include <boost /tuple/tuple.hpp>
+
 
 class Player
 {
@@ -14,7 +17,9 @@ class Player
         void Run();
         void Shuffle();
         //std::vector<Card*> ShowHand();
-        std::pair<std::string , int> ShowHand(int i);
+        //std::pair<std::string , int> ShowHand(int i);
+        //std::pair<std::string , std::string> ShowHand(int i);
+        std::tuple<std::string , std::string, int> ShowHand(int i);
         int GetNrOfCardsInHand();
     protected:
     private:

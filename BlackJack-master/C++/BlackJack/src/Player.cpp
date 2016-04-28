@@ -1,5 +1,7 @@
 #include "Player.h"
 
+
+
 Player::Player()
 {
   //ctor
@@ -36,24 +38,24 @@ std::vector<Card> Player::ShowHand()
 }
 */
 
-std::pair<std::string , int> Player::ShowHand(int i)
+//std::pair<std::string , int> Player::ShowHand(int i)
+std::tuple<std::string , std::string, int> Player::ShowHand(int i)
 {
-
   //int j = p_cards_in_hand.size();
    //std::string tempcardsuit;
   //for (int iter = p_cards_in_hand.begin(); iter != p_cards_in_hand.end(); iter++)
   //for (unsigned i = 0; i != j; i++)
   //{
 //Card* p_first_card = p_cards_in_hand.front();
-
-
   //int tempcardval;
-  show.first = p_cards_in_hand.at(i)->GetCardSuit();
-  show.second = p_cards_in_hand.at(i)->GetCardValue();
+  auto first = p_cards_in_hand.at(i)->GetCardSuit();
+  auto second = p_cards_in_hand.at(i)->GetCardName();
+  auto third = p_cards_in_hand.at(i)->GetCardValue();
 
   //}
   //return tempcardsuit;
-  return std::make_pair(show.first, show.second);
+  //return std::make_tuple(std::get<0>(show), std::get<1>(show), std::get<2>(show));
+  return std::make_tuple(first, second, third);
 }
 
 int Player::GetNrOfCardsInHand()

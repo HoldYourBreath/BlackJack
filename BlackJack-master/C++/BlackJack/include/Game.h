@@ -5,6 +5,9 @@
 #include "Card.h"
 #include "CardDeck.h"
 #include "Player.h"
+#include <tuple>
+//#include <boost /tuple/tuple.hpp>
+
 
 class Game
 {

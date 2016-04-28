@@ -71,16 +71,23 @@ void Game::UiEvent(std::vector<char> event)
         if (p_player1->GetNrOfCardsInHand() == 0)
         {
           p_dealer->DrawCard();
+          p_dealer->DrawCard();
           p_player1->DrawCard();
           p_player1->DrawCard();
           //std::cout << topcard->GetCardValue() << " of " << topcard->GetCardSuit() << std::endl;
           //std::cout << p_player1->ShowHand() << std::endl;
           std::cout << "Dealers cards\n";
-          std::cout << p_dealer->ShowHand(0).second << " of " << p_dealer->ShowHand(0).first << std::endl;
+          auto dealer = p_dealer->ShowHand(0);
+          std::cout << std::get<1>(dealer) << " of " << std::get<0>(dealer) << std::endl;
+          //std::cout << p_dealer->ShowHand(0).std::get<1> << " of " << p_dealer->ShowHand(0).std::get<0> << std::endl;
           std::cout << "|==============================================|\n";
           std::cout << "Players cards\n";
-          std::cout << p_player1->ShowHand(0).second << " of " << p_player1->ShowHand(0).first << std::endl;
-          std::cout << p_player1->ShowHand(1).second << " of " << p_player1->ShowHand(1).first << std::endl;
+          auto player0 = p_player1->ShowHand(0);
+          std::cout << std::get<1>(player0) << " of " << std::get<0>(player0) << std::endl;
+          auto player1 = p_player1->ShowHand(1);
+          std::cout << std::get<1>(player1) << " of " << std::get<0>(player1) << std::endl;
+          //std::cout << p_player1->ShowHand(0).second << " of " << p_player1->ShowHand(0).first << std::endl;
+          //std::cout << p_player1->ShowHand(1).second << " of " << p_player1->ShowHand(1).first << std::endl;
           std::cout << "Press ENTER to continue...";
           std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
 
@@ -90,12 +97,12 @@ void Game::UiEvent(std::vector<char> event)
         {
           p_player1->DrawCard();
           std::cout << "Dealers cards\n";
-          std::cout << p_dealer->ShowHand(0).second << " of " << p_dealer->ShowHand(0).first << std::endl;
+          //std::cout << p_dealer->ShowHand(0).second << " of " << p_dealer->ShowHand(0).first << std::endl;
           std::cout << "|==============================================|\n";
           std::cout << "Players cards\n";
-          std::cout << p_player1->ShowHand(0).second << " of " << p_player1->ShowHand(0).first << std::endl;
-          std::cout << p_player1->ShowHand(1).second << " of " << p_player1->ShowHand(1).first << std::endl;
-          std::cout << p_player1->ShowHand(2).second << " of " << p_player1->ShowHand(2).first << std::endl;
+          //std::cout << p_player1->ShowHand(0).second << " of " << p_player1->ShowHand(0).first << std::endl;
+          //std::cout << p_player1->ShowHand(1).second << " of " << p_player1->ShowHand(1).first << std::endl;
+          //std::cout << p_player1->ShowHand(2).second << " of " << p_player1->ShowHand(2).first << std::endl;
           std::cout << "Press ENTER to continue...";
           std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
         }
